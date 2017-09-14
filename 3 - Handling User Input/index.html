@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="userinputhandling">
+            <input v-model="message"></input>
+            <p>{{message}}</p>
+            <button v-on:click="reverseMessage">Reverse message</button>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

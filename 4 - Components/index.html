@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="example">
+            <superhero-title></superhero-title>
+            <ol>
+                <superhero-item v-for="item in list" v-bind:superhero="item" v-bind:key="item.id">></superhero-item>
+            </ol>
+            <superhero-choice></superhero-choice>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
